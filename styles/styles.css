@@ -1,0 +1,64 @@
+/* Navigation bar */
+nav {
+  background-color: #333;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  padding: 10px;
+  display: block;
+}
+
+/* Heading */
+h1 {
+  color: darkgreen;
+}
+
+/* General image rule */
+img {
+  width: 150px;
+  height: auto;
+  border: 2px solid #ccc;
+  padding: 5px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Profile image inside main only */
+main img {
+  width: 150px;
+  height: auto;
+}
+
+/* Main section */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Aside section */
+aside {
+  width: 250px;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  padding: 15px;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+aside img {
+  width: 200px;
+  height: auto;
+}
+
+/* Paragraph */
+p {
+  padding: 0;
+}
+
+/* Footer */
+footer {
+  margin-top: 20px;
+  border-top: 2px solid #ccc;
+  text-align: center;
+}
