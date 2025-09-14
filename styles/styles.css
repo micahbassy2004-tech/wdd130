@@ -61,4 +61,25 @@ footer {
   margin-top: 20px;
   border-top: 2px solid #ccc;
   text-align: center;
+}/* Contact Information */
+.contact-info {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #f0f8ff; /* light blue box for emphasis */
+  border-radius: 5px;
+}
+
+.contact-info p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.contact-info a {
+  color: darkgreen;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
 }
