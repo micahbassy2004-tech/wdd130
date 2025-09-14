@@ -29,7 +29,7 @@ main img {
   width: 150px;
   height: auto;
   display: block;
-  margin: 0 auto; /* center profile image in main */
+  margin: 0 auto; /* Center profile image in main */
 }
 
 /* Main section */
@@ -41,7 +41,7 @@ main {
 /* Aside section */
 aside {
   width: 250px;
-  margin: 20px 0 20px 0; /* top/right/bottom/left */
+  margin: 20px 0 20px 0; /* Top, right, bottom, left */
   border: 1px solid #ccc;
   padding: 15px;
   background-color: #f9f9f9;
@@ -53,7 +53,7 @@ aside img {
   width: 200px;
   height: auto;
   display: block;
-  margin-left: 0; /* align to the left of aside */
+  margin-left: 0; /* Align flag to the left */
 }
 
 /* Paragraph */
@@ -73,7 +73,7 @@ footer {
   margin-top: 20px;
   padding: 10px;
   border: 1px solid #ccc;
-  background-color: #f0f8ff; /* light blue box for emphasis */
+  background-color: #f0f8ff; /* Light blue background */
   border-radius: 5px;
 }
 
