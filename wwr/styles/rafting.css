@@ -150,3 +150,13 @@ footer nav img {
   height: auto;
   vertical-align: middle;
 }
+.socialmedia a {
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.socialmedia img {
+  width: 30px;
+  height: auto;
+  vertical-align: middle;
+}
