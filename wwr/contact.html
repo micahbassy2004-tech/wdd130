@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>White Water Rafting | Contact Us</title>
+  <meta name="description" content="Contact White Water Rafting Co. for reservations, general inquiries, and suggestions. Find our address, phone, email, and connect with our team.">
+  <meta name="author" content="Micah Maurice Bassey">
+  <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+  <header>
+    <img src="images/logo.jpeg" alt="Rafting Site Logo" class="logo">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="trips.html">Trips</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Contact Us</h1>
+
+    <!-- Company Info -->
+    <section class="company-info">
+      <h2>Our Office</h2>
+      <p><strong>Address:</strong> 123 River Street, Boise, ID 83702</p>
+      <p><strong>Phone:</strong> (208) 555-1234</p>
+      <p><strong>Email:</strong> info@rafting.com</p>
+
+      <h3>Find Us on the Map</h3>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.326568834468!2d-116.2146062844985!3d43.61501807912268"
+        width="400" height="300" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </section>
+
+    <!-- Employees -->
+    <section class="employees">
+      <h2>Meet Our Team</h2>
+      <div class="employee-gallery">
+        <figure>
+          <img src="images/employee1.jpg" alt="Sarah Johnson, Head Guide">
+          <figcaption>Sarah Johnson – Head Guide</figcaption>
+        </figure>
+        <figure>
+          <img src="images/employee2.jpg" alt="Mark Thompson, Safety Coordinator">
+          <figcaption>Mark Thompson – Safety Coordinator</figcaption>
+        </figure>
+        <figure>
+          <img src="images/employee3.jpg" alt="Emily Davis, Reservations Manager">
+          <figcaption>Emily Davis – Reservations Manager</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-form">
+      <h2>Send Us a Message</h2>
+      <form>
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <fieldset>
+          <legend>Purpose of Message:</legend>
+          <label><input type="radio" name="purpose" value="general"> General Inquiry</label>
+          <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
+          <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+        </fieldset>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"></textarea>
+
+        <label>
+          <input type="checkbox" name="newsletter"> Please subscribe me to the monthly newsletter
+        </label>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 White Water Rafting Co. | All Rights Reserved</p>
+    <div class="social">
+      <a href="#"><img src="images/facebook.jpg" alt="Facebook social media icon"></a>
+      <a href="#"><img src="images/twitter.jpg" alt="Twitter social media icon"></a>
+      <a href="#"><img src="images/instagram.jpg" alt="Instagram social media icon"></a>
+    </div>
+  </footer>
+</body>
+</html>
