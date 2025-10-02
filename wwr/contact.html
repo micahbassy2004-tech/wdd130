@@ -11,12 +11,12 @@
 <body>
   <header>
     <img src="images/logo.jpeg" alt="Rafting Site Logo" class="logo">
-    <nav>
+    <nav aria-label="Main Navigation">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
         <li><a href="trips.html">Trips</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -27,34 +27,39 @@
     <!-- Company Info -->
     <section class="company-info">
       <h2>Our Office</h2>
-      <p><strong>Address:</strong> 123 River Street, Boise, ID 83702</p>
-      <p><strong>Phone:</strong> (208) 555-1234</p>
-      <p><strong>Email:</strong> info@rafting.com</p>
+      <address>
+        <p><strong>Address:</strong> 123 River Street, Boise, ID 83702</p>
+        <p><strong>Phone:</strong> <a href="tel:+12085551234">(208) 555-1234</a></p>
+        <p><strong>Email:</strong> <a href="mailto:info@rafting.com">info@rafting.com</a></p>
+      </address>
 
       <h3>Find Us on the Map</h3>
-      <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!..." 
-        class="map"
-        allowfullscreen 
+      <!-- Replace this src with your real embed code from Google Maps -->
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.4900737618653!2d-116.21460678436898!3d43.61501997912265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54aef8b95f9a8d25%3A0x8e30247e1a2d4a4c!2sBoise%2C%20ID%2083702!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+        width="600"
+        height="450"
+        style="border:0;"
+        allowfullscreen
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade">
       </iframe>
-    </section> <!-- ✅ closed company-info -->
+    </section>
 
     <!-- Employees -->
     <section class="employees">
       <h2>Meet Our Team</h2>
       <div class="employee-gallery">
         <figure>
-          <img src="images/employee1.jpg" alt="Sarah Johnson, Head Guide">
+          <img src="images/employee1.jpg" alt="Sarah Johnson – Head Guide">
           <figcaption>Sarah Johnson – Head Guide</figcaption>
         </figure>
         <figure>
-          <img src="images/employee2.jpg" alt="Mark Thompson, Safety Coordinator">
+          <img src="images/employee2.jpg" alt="Mark Thompson – Safety Coordinator">
           <figcaption>Mark Thompson – Safety Coordinator</figcaption>
         </figure>
         <figure>
-          <img src="images/employee3.jpg" alt="Emily Davis, Reservations Manager">
+          <img src="images/employee3.jpg" alt="Emily Davis – Reservations Manager">
           <figcaption>Emily Davis – Reservations Manager</figcaption>
         </figure>
       </div>
@@ -63,7 +68,7 @@
     <!-- Contact Form -->
     <section class="contact-form">
       <h2>Send Us a Message</h2>
-      <form>
+      <form action="#" method="post">
         <label for="fullname">Your Name:</label>
         <input type="text" id="fullname" name="fullname" required>
 
@@ -72,22 +77,22 @@
 
         <fieldset>
           <legend>Purpose of Message:</legend>
-          <label for="general">
-            <input type="radio" id="general" name="purpose" value="general"> General Inquiry
+          <label>
+            <input type="radio" name="purpose" value="general" required> General Inquiry
           </label>
-          <label for="reservation">
-            <input type="radio" id="reservation" name="purpose" value="reservation"> Reservation Question
+          <label>
+            <input type="radio" name="purpose" value="reservation"> Reservation Question
           </label>
-          <label for="suggestion">
-            <input type="radio" id="suggestion" name="purpose" value="suggestion"> Website Suggestion
+          <label>
+            <input type="radio" name="purpose" value="suggestion"> Website Suggestion
           </label>
         </fieldset>
 
         <label for="message">Message:</label>
-        <textarea id="message" name="message"></textarea>
+        <textarea id="message" name="message" rows="5"></textarea>
 
-        <label for="newsletter">
-          <input type="checkbox" id="newsletter" name="newsletter"> Please subscribe me to the monthly newsletter
+        <label>
+          <input type="checkbox" id="newsletter" name="newsletter"> Subscribe me to the monthly newsletter
         </label>
 
         <button type="submit">Send Message</button>
@@ -98,9 +103,15 @@
   <footer>
     <p>&copy; 2025 White Water Rafting Co. | All Rights Reserved</p>
     <div class="social">
-      <a href="#"><img src="images/facebook.jpg" alt="Facebook social media icon"></a>
-      <a href="#"><img src="images/twitter.jpg" alt="Twitter social media icon"></a>
-      <a href="#"><img src="images/instagram.jpg" alt="Instagram social media icon"></a>
+      <a href="#" aria-label="Facebook">
+        <img src="images/facebook.jpg" alt="Facebook Icon">
+      </a>
+      <a href="#" aria-label="Twitter">
+        <img src="images/twitter.jpg" alt="Twitter Icon">
+      </a>
+      <a href="#" aria-label="Instagram">
+        <img src="images/instagram.jpg" alt="Instagram Icon">
+      </a>
     </div>
   </footer>
 </body>
