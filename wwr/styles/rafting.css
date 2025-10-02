@@ -107,3 +107,8 @@ footer .social img {
   width: 25px;
   height: 25px;
 }
+.map {
+  width: 400px;
+  height: 300px;
+  border: 0;
+}
